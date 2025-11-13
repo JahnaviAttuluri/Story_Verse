@@ -1,0 +1,11 @@
+{
+	"compilerOptions": {
+	 	"allowJs": true,
+		"skipLibCheck": true,
+		"esModuleInterop": true,
+		"noEmit": true
+	},
+	"include": ["src/**/*.js"],
+	"exclude": ["node_modules", "**/node_modules/**"]
+}
+

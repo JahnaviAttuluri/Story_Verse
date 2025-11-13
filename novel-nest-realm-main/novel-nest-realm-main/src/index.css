@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 35 20% 97%;
+    --foreground: 25 25% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 25 25% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 25 25% 15%;
+
+    --primary: 25 75% 47%;
+    --primary-foreground: 35 20% 97%;
+
+    --secondary: 180 45% 55%;
+    --secondary-foreground: 35 20% 97%;
+
+    --muted: 35 15% 90%;
+    --muted-foreground: 25 10% 45%;
+
+    --accent: 35 85% 65%;
+    --accent-foreground: 25 25% 15%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 35 20% 97%;
+
+    --border: 35 20% 88%;
+    --input: 35 20% 88%;
+    --ring: 25 75% 47%;
+
+    --radius: 0.5rem;
+
+    --gradient-primary: linear-gradient(135deg, hsl(25 75% 47%), hsl(35 85% 65%));
+    --gradient-secondary: linear-gradient(135deg, hsl(180 45% 55%), hsl(180 55% 65%));
+    --shadow-warm: 0 10px 30px -10px hsl(25 75% 47% / 0.2);
+    --shadow-elevated: 0 20px 40px -15px hsl(25 25% 15% / 0.15);
+  }
+
+  .dark {
+    --background: 25 30% 8%;
+    --foreground: 35 20% 95%;
+
+    --card: 25 25% 12%;
+    --card-foreground: 35 20% 95%;
+
+    --popover: 25 25% 12%;
+    --popover-foreground: 35 20% 95%;
+
+    --primary: 35 85% 65%;
+    --primary-foreground: 25 25% 15%;
+
+    --secondary: 180 45% 45%;
+    --secondary-foreground: 35 20% 95%;
+
+    --muted: 25 20% 18%;
+    --muted-foreground: 35 15% 65%;
+
+    --accent: 25 75% 47%;
+    --accent-foreground: 35 20% 95%;
+
+    --destructive: 0 62% 45%;
+    --destructive-foreground: 35 20% 95%;
+
+    --border: 25 20% 20%;
+    --input: 25 20% 20%;
+    --ring: 35 85% 65%;
+
+    --gradient-primary: linear-gradient(135deg, hsl(35 85% 65%), hsl(25 75% 57%));
+    --gradient-secondary: linear-gradient(135deg, hsl(180 45% 45%), hsl(180 55% 55%));
+    --shadow-warm: 0 10px 30px -10px hsl(35 85% 65% / 0.3);
+    --shadow-elevated: 0 20px 40px -15px hsl(0 0% 0% / 0.5);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
