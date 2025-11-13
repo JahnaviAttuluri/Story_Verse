@@ -25,8 +25,7 @@ app.use('/api/books', booksRouter);
 app.use('/api/auth', authRouter);
 
 // Mongo connection
-const mongoUri = process.env.MONGODB_URI || 'mongodb+srv://jonv0488:staywithmeforever0488@cluster0.594zizl.mongodb.net/?appName=Cluster0';
-
+const mongoUri = process.env.MONGODB_URI || 'mongodb+srv://ionv0488:JiDIE3xo95Xy7A4q@cluster0.594zizl.mongodb.net/storyverse?retryWrites=true&w=majority';
 async function start() {
   try {
     await mongoose.connect(mongoUri);
